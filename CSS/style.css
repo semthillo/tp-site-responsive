@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #2F303A;
+    margin: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+
+#head{
+    padding-left: 5%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #2F303A;
+    top: 0;
+}
+#head nav{
+   
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+#head nav a{
+    color: #ffffff;
+    margin-left: 25px;
+   
+}
+#head .menu{
+    display: none;
+}
+
+#music{
+    background-image: url('../images/Landing_Page.jpg');
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#music img{
+    width: 502px;
+    height: 700px;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+#music .text{
+    margin-top: 200px;
+    color: #ffffff;
+    margin-right: 40px;
+    
+}
+
+#music .text h1{
+    font-size: 5rem;
+    text-align: left;
+}
+#music .text p{
+    text-align: center;
+    font-size: 30px;
+}
+#music .text button{
+    width: 130px;
+    height: 50px;
+    background-color: #1762A7;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #1762A7;
+}
+
+#discover{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#discover .texte .items{
+    display: flex;
+}
+#discover .texte .items .item{
+    width: 75px;
+    height: 85px;
+    background-color: #202027;
+    margin-left: 20px;
+    text-align: center;
+    color: #ffffff;
+
+    
+}
+.item img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+.item p{
+    margin-top: 5px;
+}
+
+#discover .texte h1{
+    color: #ffffff;
+    font-size: 4rem;
+}
+#discover .texte .para{
+    font-size: 1.6rem;
+    color: #ffffff;
+    width: 500px;
+}
+
+#discover .image{
+    width: 400px;
+    height: 320px;
+    margin-right: 150px;
+}
+
+#formu{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#formu h1{
+    font-size: 4rem;
+    color: #ffffff;
+    margin-top: 160px;
+    margin-right: 120px;
+}
+#formu h1 span{
+    color: #BC3A80;
+    font-size: 5.5rem;
+}
+
+#formu form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    background-color: #202027;
+    align-items: center;
+    padding-top: 80px;
+    border-radius: 20px;
+    
+}
+#formu form div {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+} 
+#formu form div input{
+    display: flex; 
+    flex-direction: column;
+   
+   
+   align-items: center;
+} 
+#formu form div label{
+    margin-bottom: 10px;
+    color: #ffffff;
+    position: relative;
+    left: 0;
+}
+#formu form div input{
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid #1762A7;
+    border-radius: 10px;
+    width: 80%;
+    height: 50px;
+
+    
+}
+
+
+#formu form button{
+    
+    background-color: #1762A7;
+    color: #ffffff;
+    width: 80%;
+    height: 50px;
+    border: 1px solid #1762A7;
+    border-radius: 10px;
+}
+#formu form button:hover{
+    background-color: #57a4ec;
+    cursor: pointer;
+}
+#foot{
+    display: flex;
+    justify-content: space-between;
+    background-color: #202027;
+    margin: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+#foot a{
+    margin-left: 25px;
+    color: #ffffff;
+}
+
+#foot div{
+    display: flex;
+}
+
+#foot .icon{
+    margin-right: 25px;
+
+}
+#foot .icon img{
+    margin-right: -18px;
+    width: 15px;
+
+}
+
+@media  (max-width: 862px) {
+    #head nav{
+        display: none;
+        
+    }
+    #head .menu{
+        display: block;
+        margin-top: 35px;
+        
+    }
+    #music{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #music .text{
+        margin-top: 50px;
+    }
+    #music .text h1{
+        text-align: center;
+        
+        font-size: 3rem;
+    }
+    #music .text p{
+        font-size: 1.6rem;
+    }
+    #discover{
+        display: block;
+        text-align: center;
+    }
+    #discover .texte .items{
+        justify-content: center;
+    }
+    #discover .image{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    #formu{
+        display: block;
+        text-align: center;
+        margin-left: 30px;
+    }
+    #formu h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    #formu form{
+        width: 80%;
+    }
+    
+}
+@media  (max-width: 452px){
+    #head nav{
+        display: none;
+        
+    }
+    #head {
+        justify-content: center;
+    }
+    #head .menu{
+        display: block;
+        margin-top: 35px;
+        position: relative;
+        right: 100px;
+        
+    }
+
+}
