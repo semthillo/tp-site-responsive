@@ -20,6 +20,8 @@ a{
     background-color: #2F303A;
     top: 0;
 }
+
+
 #head nav{
    
     position: relative;
@@ -226,6 +228,9 @@ a{
 }
 
 @media  (max-width: 862px) {
+    #head{
+        z-index: 1000;
+    }
     #head nav{
         display: none;
         
@@ -233,6 +238,8 @@ a{
     #head .menu{
         display: block;
         margin-top: 35px;
+        position: relative;
+        right: 50px;
         
     }
     #music{
@@ -241,6 +248,8 @@ a{
     }
     #music .text{
         margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     #music .text h1{
         text-align: center;
@@ -261,11 +270,14 @@ a{
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 30px;
+        width: 80%;
     }
     #formu{
         display: block;
         text-align: center;
-        margin-left: 30px;
+        width: 80%;
+        margin-left: 85px;
+        margin-right: auto;
     }
     #formu h1{
         font-size: 4rem;
@@ -274,7 +286,28 @@ a{
     #formu form{
         width: 80%;
     }
+    #music img{
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 75%;
+        height: 700px;
+       
+    }
+    #discover .texte .para{
+        font-size: 1.4rem;
+        width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #foot{
+        width: 100%;
+    }
+    #music .text p{
+        font-size: 1rem;
+    }
     
+   
 }
 @media  (max-width: 452px){
     #head nav{
@@ -291,5 +324,11 @@ a{
         right: 100px;
         
     }
+    #discover .texte p{
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+   
 
 }
